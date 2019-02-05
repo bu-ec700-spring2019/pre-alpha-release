@@ -1,5 +1,3 @@
-## Setup CAD tools
-include $(CADENV_PATH)/cadenv.mk
 
 ## Tool specific options
 VCS_OPTIONS += +notimingcheck
