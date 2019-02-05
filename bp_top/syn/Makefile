@@ -7,7 +7,6 @@ BP_BE_PATH	   = $(TOP)/bp_be
 BP_ME_PATH 	   = $(TOP)/bp_me
 BP_COMMON_PATH = $(TOP)/bp_common
 
-CADENV_PATH    = $(TOP)/bsg_cadenv
 BSG_IP_PATH	   = $(TOP)/bsg_ip_cores
 VERILATOR_PATH = $(TOP)/verilator
 SYSTEMC_PATH   = $(TOP)/systemc
@@ -93,7 +92,6 @@ test_env:
 		[ -d $(BP_TOP_PATH)    ] && [ -d $(BP_FE_PATH)      ] && \
 		[ -d $(BP_BE_PATH)     ] && [ -d $(BP_ME_PATH)      ] && \
 		[ -d $(COMMON_PATH)    ] && [ -d $(BSG_IP_PATH)     ] && \
-		[ -d $(CADENV_PATH)	   ] && [ -d $(VERILATOR_PATH)  ] && \
 		[ -d $(SYSTEMC_PATH)   ] && 							 \
 		echo "BP environment correctly set up!"
 

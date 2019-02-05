@@ -1,5 +1,3 @@
-## Setup CAD tools
-include $(CADENV_PATH)/cadenv.mk
 
 ## Tool specific options
 VCS_OPTIONS += +notimingcheck
@@ -15,6 +13,10 @@ VCS_OPTIONS += +multisource_int_delays
 VCS_OPTIONS += +neg_tchk
 VCS_OPTIONS += +libext+.v+.vlib+.vh
 VCS_OPTIONS += +vcs+finish+1000000ps
+VCS_OPTIONS += -R
+VCS_OPTIONS += +vcs+vcdplusautoflushon
+VCS_OPTIONS += +vcs+vcdpluson
+VCS_OPTIONS += +vcs+vcdplusmemon
 
 ## Find sources
 VCS_OPTIONS += +incdir+$(BP_COMMON_PATH)
@@ -29,6 +31,7 @@ VCS_OPTIONS += +incdir+$(BSG_IP_PATH)/bsg_mem
 VCS_OPTIONS += +incdir+$(BSG_IP_PATH)/bsg_misc
 VCS_OPTIONS += +incdir+$(BSG_IP_PATH)/bsg_test
 VCS_OPTIONS += +incdir+$(BSG_IP_PATH)/bsg_noc
+
 
 LINT_OPTIONS +=+lint=all,noSVA-UA,noVCDE,noSV-LCM-PPWI
 
